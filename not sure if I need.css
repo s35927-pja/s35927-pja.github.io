@@ -1,0 +1,308 @@
+@keyframes wipe-top {
+  from { clip-path: polygon(0 0, 100% 0, 100% 10%, 0 10%); }
+  to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity:1; }
+}
+
+
+::selection {
+  color: #ffd581;
+  background: #dd1313;
+}
+
+
+p.left, h3.left { text-align:left; }
+p.center { text-align:center; }
+p.date { font-weight:bold; font-style: italic; }
+
+
+img.wide { width:100%; }
+img.smaller { width:55%; }
+
+img.half {
+  width:46%;
+  display:inline-block;
+  margin: 0 0.23vw;
+  vertical-align: middle;
+}
+
+.gallery {
+  width:75%;
+  white-space:nowrap;
+  overflow-x: scroll;
+  margin:1vw auto;
+  background-color:linen;
+  border:clamp(1px, 5vw, 30px) solid linen;
+  border-top:none;
+  border-bottom:none;
+  border-radius:9px;
+}
+.gallery img {
+  clip-path: unset;
+  margin:0.5vw;
+  vertical-align:middle;
+}
+video.smaller { width:75%; }
+video { padding: 1vw 0; }
+audio { margin: clamp(1px, 0.5vw, 15px) auto; }
+
+
+.onelinelogo a img {
+  width: clamp(50px, 12.23vw, 118px); 
+  position: absolute; 
+  z-index: 3; 
+  top: clamp(1px, 8.5vw, 86px); 
+  left:1px;
+}
+.twolinelogo {
+  top:0.5vw;
+  width: 82.23vw;
+  max-width: 800px;
+  margin:0 auto;
+}
+.twolinelogo img { 
+  display:inline; 
+  width:50%;
+}
+.twolinelogo a img {
+  width: clamp(50px, 12.23vw, 118px); 
+  position: absolute; 
+  z-index: 3;
+  top: clamp(1px, 6.5vw, 67px);
+  left: clamp(1px,20vw,190px);
+}
+header a img:hover, .onelinelogo a img:hover, .twolinelogo a img:hover {
+  filter: drop-shadow(1px 1px 0px black);
+  transition:0s;
+}
+
+.about, .news, .discoveries, .WHbutton, .stickers, .thePFE, .neighborhood, .about-smaller, .news-smaller, .discoveries-smaller, .WHbutton-smaller, .stickers-smaller, .thePFE-smaller, .neighborhood-smaller {
+  display:inline-block;
+  background-size:100% 100%;
+  position:relative;
+  text-align:right;
+  vertical-align:top;
+}
+.about, .news, .discoveries, .WHbutton, .stickers, .thePFE, .neighborhood {
+  height:7.4vw;
+  max-height:74px;
+}
+.about, .discoveries { 
+  width:25vw;
+  max-width:250px;
+}
+
+.about, .about-smaller { background-image: url('../images/ButtonAboutUs.png'); }
+.discoveries, .discoveries-smaller { background-image: url('../images/ButtonDiscoveries.png'); }
+.news, .news-smaller { background-image: url('../images/ButtonNews.png'); }
+.WHbutton, .WHbutton-smaller { background-image: url('../images/ButtonWelcomeHome.png'); }
+.stickers, .stickers-smaller { background-image: url('../images/ButtonStickers.png'); }
+.thePFE,.thePFE-smaller { background-image: url('../images/ButtonThePFE.png'); }
+.neighborhood, .neighborhood-smaller { background-image: url('../images/ButtonTheNeighborhood.png'); }
+
+.news { 
+  width:16.9vw;
+  max-width:170px;
+}
+.WHbutton { 
+  height:8.5vw;
+  max-height:85px;
+  width:30vw;
+  max-width:308px;
+}
+.stickers { 
+  width:21.23vw;
+  max-width:212px;
+}
+.thePFE { 
+  width:30vw;
+  max-width:304px; 
+}
+.neighborhood { 
+  width:31vw;
+  max-width:317px; 
+}
+
+.about-smaller, .news-smaller, .discoveries-smaller, .WHbutton-smaller, .stickers-smaller, .thePFE-smaller, .neighborhood-smaller { 
+  height: clamp(30px, 6vw, 60px); 
+  animation-name: wipe;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.about-smaller, .news-smaller, .discoveries-smaller, .WHbutton-smaller, .stickers-smaller { margin-bottom: clamp(1px, 2.23vw, 18px); }
+.about-smaller, .discoveries-smaller { width:clamp(100px, 22.3vw, 223px); }
+.WHbutton-smaller { width: clamp(142px, 28vw, 284px); }
+.stickers-smaller { width: clamp(94px, 18.8vw, 188px); }
+
+.news-smaller { 
+  width: clamp(73px, 14.6vw, 146px); 
+  margin: 0 clamp(1px, 1vw, 10px);
+}
+.thePFE-smaller { 
+  width: clamp(140px, 28vw, 280px); 
+  margin-right: clamp(1px, 1vw, 10px);
+}
+.neighborhood-smaller {  
+  width: clamp(146px, 29vw, 293px); 
+  margin-left: clamp(1px, 1vw, 10px);
+}
+
+.addition {
+  width:1px;
+  position:relative;
+  z-index:2;
+  overflow: visible;
+  display: inline-block;
+  height: 1px;
+  vertical-align: middle;
+}
+.addition img {
+  max-width: 50px;
+  width: 5vw;
+  left: clamp(-45px, -3.23vw, -1px);
+}
+
+.additionaldiscovery { 
+  height:1px; 
+  width:1px;
+  overflow:visible;
+}
+.additionaldiscovery img {
+  width: clamp(8px, 3vw, 30px);
+  top: clamp(-23px, -2.23vw, -4px);
+}
+
+table, table a { 
+  font-weight:bold;
+  font-size: clamp(10px, 2.23vw, 15px);
+  color:black;
+  text-align:center;
+  margin:0 auto;
+}
+table a:hover { color: #4f5ae5; }
+
+td { 
+  padding:1vw; 
+  width:33%;
+}
+
+.goback {
+  background-image: url('../images/Go+back.gif');
+  background-size: contain;
+  height: clamp(35px, 6vw, 60px);
+  width: clamp(107px, 18.4vw, 184px);
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: contrast(1.13);
+  display: inline-block;
+  padding:0.5vw;
+  margin:0.5vw;
+}
+hr {
+  background-image: url('../images/colorbar.png');
+  border-radius: clamp(1px, 0.5vw, 7px);
+  margin: 0.5vw auto 0.5vw auto;
+}
+hr.rainbow, hr.rainbowfull {
+  background: url('../images/RainbowBorder.png');
+  max-height: 142px;
+  margin: clamp(1px, 0.5vw, 15px) auto;
+}
+hr.tulips {
+  background: url('../images/tripletulip.gif');
+  max-height:34px;
+}
+hr.littleguys, hr.littleguysfull {
+  background: url('../images/borderheads.gif');
+  max-height:27px;
+}
+hr, hr.rainbow, hr.rainbowfull, hr.tulips, hr.littleguys, hr.littleguysfull {
+  min-height:16px;
+  height:3vw;
+  width:70%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+hr.littleguysfull, hr.rainbowfull, hr { max-width:unset; }
+hr, hr.rainbowfull {
+  background-size:100% 100%;
+  height: 1.5vw;
+  width:90%;
+}
+hr.rainbowfull { max-width:600px; }
+hr.tulips { min-height:23px; }
+hr.littleguysfull { 
+  background-repeat: repeat-x; 
+  width:100%;
+}
+
+
+details {
+  border: 0px solid #aaa;
+  padding: 0.5em 0.5em 0;
+}
+summary {
+  font-weight: bold;
+  color: #3366CC;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  text-align: center;
+  content: "This text replaces the original.";
+}
+details[open] {
+  border-bottom: 1px solid #aaa;
+  padding: 0.5em;
+}
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+summary:hover { 
+  color:crimson;
+  border-color:crimson;
+  transition:1s; 
+}
+
+
+#dog {
+  width: clamp(30px, 5vw, 60px);
+  height: clamp(30px, 5vw, 60px);
+  background-image: url('../images/roach_walk.gif');
+  position: relative;
+  background-size: contain;
+  background-position-y:bottom;
+  z-index: 9;
+  background-repeat: no-repeat;
+  animation-name: barkbark;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1; 
+  animation-timing-function: linear;
+}
+
+.smallcontainer {
+  height:1px;
+  overflow:visible;
+  position:relative;
+}
+
+
+.animate-uptop-fade, hr, details { 
+  transition-delay: 1s;
+  transition-duration:3s;
+  opacity: 0; 
+}
+.animate-fade { opacity: 0; }
+img, .animate-wipe, video, audio { 
+  opacity: 1; 
+}
+
+.animate {
+  opacity: 1;
+}

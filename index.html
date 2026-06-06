@@ -1,42 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" type="text/css" href="basic.css">
+        <link rel="icon" href="Images/logo.ico" type="image/ico" sizes="16x16">
         <meta charset="utf-8">
-        <title>Main page</title>
+        <title>Home</title>
         <style>
-            body{
-                background-color: #bdb9e0; 
-                 background-image: url(Images/PFUDOR.jpg); 
-                 background-size: 100%;}
-           .link{
-                color:#6f49a1;  
-                background-color: #92add1;
-                text-decoration: none;
+            html, body {
+             overflow-y: auto;
+            }
+            main {
+                background-color:white;
+                border-radius:2vw 2vw 1vw 1vw;
+            }
+            .solidbg {
+                position: absolute;
+                top: -8px;
+                height: 0vh;
+                }
+            .bigimage { width: 98%;}
 
-                border: 2px solid black;
-                border-radius: 5px;
-
-                display: inline-block;
-                margin: 10px;
-                padding: 5px;
-           }
-           .link:hover{
-                background-color: #6f49a1;
-                color: #92add1;
-                transition-duration: 5s;
-           }
+            nav{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding-right: 20px;
+                max-height: 50%;
+            }
+            .about, .cast, .stickers{max-width: 390px;}
+            .background {
+                position: relative;
+                background-image: url("Images/star sitter.png");
+                background-position: center bottom;
+                background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
+                border-radius: 0 0 1vw 1vw;
+                padding-bottom: 22em;
+            }   
         </style>
     </head>
-    <body>
-            <header>
-                <h1>Pink fluffy unicorns</h1>
-            </header>
-            <p> <i>Crazy</i> I was <i>crazy</i> once they locked me in a room a rubber room a rubber room with rats and rats make me crazy</p>
-           <img src="Images/PFUDOR.jpg" alt="image of a popular brony meme pink fluffy unicorns dancing on rainbows, where a mlp style fluffy unicorn is mid jump on a rainbow" height="500">
-            <footer>
-                <p><i>Crazy</i> I was <i>crazy</i> once they locked me in a room a rubber room a rubber room with rats and rats make me crazy</p>
-                <a class="link" href="podstrona.html"> podstrona</a>
+    <body> <main>
+            <img class="bigimage" src="Images/Tweels.png" alt="A pixel art of the Octavinelle trio from twisted wonderland">
+         <div class="background">
+            <h4 class="title">Through Space and Time</h4>
+            <h4>to find you again</h4>
+            <img class=dividers src="https://64.media.tumblr.com/24bd53921bccb6652d19a6ba6de03849/6907fb039a742f24-f6/s2048x3072/adcd928791b379cb403a56a7f7be543c47e09041.pnj" alt="Purple star and moon divider">
+            <div class="poem"><h5>Not from the stars do I my judgement pluck;</h5>
+            <h5>And yet methinks I have Astronomy,</h5>
+            <h5>But not to tell of good or evil luck,</h5>
+            <h5>Of plagues, of dearths, or seasons’ quality;</h5>
+            <h5>Nor can I fortune to brief minutes tell,</h5>
+            <h5>Pointing to each his thunder, rain and wind,</h5>
+            <h5>Or say with princes if it shall go well</h5>
+            <h5>By oft predict that I in heaven find …</h5>
+            <p> - William Shakespeare, Sonnet 14.</p></div>
+            <img class=dividers src="https://64.media.tumblr.com/24bd53921bccb6652d19a6ba6de03849/6907fb039a742f24-f6/s2048x3072/adcd928791b379cb403a56a7f7be543c47e09041.pnj" alt="Purple star and moon divider">
+            <nav>
+               <a href="about us.html"><div class="about" alt="About Us" title="About Us"><img src="Images/About Us.png"></div></a>
+                <a href="The cast.html"><div class="cast" alt="The Cast" title="The Cast"><img src="Images/The Cast.png"></div></a>
+                <a href="Stickers.html"><div class="stickers" alt="Stickers" title="Stickers"><img src="Images/Stickers.png"></div></a>
+            </nav>
+            <div class="solidbg"></div>
+            <footer> 
+              <h5>Klaudia Haddock s35927</h5>
             </footer>
+              
+          </div></main>
+
     </body>
 
 </html>
